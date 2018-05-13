@@ -17,6 +17,6 @@ import webbrowser, time
 pre = "https://mnemonicdictionary.com/word/"
 
 for w in a:
-	print "opening " + pre + w
-	webbrowser.open(pre + w)
-	time.sleep(1)
+    print "opening " + pre + w
+    webbrowser.open(pre + w)
+    time.sleep(1)
