@@ -1,22 +1,8 @@
 # open md words
-
-a = ["trite",
-"hegemony",
-"ravenous",
-"arcane",
-"munificent",
-"garrulous",
-"prolific",
-"taciturn",
-"sycophant",
-"sporadic",
-"subversive"]
-
+# run the program and provide set of words("\n" separated) to the program
 import webbrowser, time
 
-pre = "https://mnemonicdictionary.com/word/"
-
-for w in a:
-    print "opening " + pre + w
-    webbrowser.open(pre + w)
-    time.sleep(1)
+while True:
+	w = raw_input('word: ')
+	webbrowser.open('https://mnemonicdictionary.com/word/{}'.format(w))
+	time.sleep(0.5)
